@@ -5,7 +5,7 @@ function MovieCard(props) {
 
   return (
     <div>
-      <div className="card" style = {{ width: '270px', border: 'none' }}>
+      <div className="card" id='movieCardId' style = {{ width: '270px', border: 'none' }}>
         <div className="MovieImage" >
           <div className="movieRating" style={{
             position: 'absolute',
@@ -15,7 +15,7 @@ function MovieCard(props) {
           }}>
             <MovieRating rating={props.rating} />
           </div>
-          <img src={`https://image.tmdb.org/t/p/w440_and_h660_face/${props.poster}`} alt='movieImage' style = {{ height:'400px'}} />
+          <img src={`https://image.tmdb.org/t/p/w440_and_h660_face/${props.poster}`} alt='movieImage' style = {{ height:'400px', borderRadius: '5%' }} />
 
         </div>
         <div className="movieTitle" style = {{ paddingTop:'14%', paddingLeft: '2%' }} > 

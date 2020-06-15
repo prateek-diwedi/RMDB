@@ -26,11 +26,12 @@ function LandingPage() {
 
   return (
     <div>
-      <h1>
+      <h1 id='prateek'>
         Movie Database
       </h1>
       
-      <div className="card-columns " style= {{ padding:'5%', marginLeft: '9%' }} >
+        <h2 style = {{ paddingLeft: '14%'}}> Popular Movies </h2>
+      <div className="card-columns" style= {{ padding:'5%', marginLeft: '9%' }} >
         { movieCardData }
       </div>
 

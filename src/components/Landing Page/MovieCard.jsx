@@ -3,9 +3,10 @@ import MovieRating from '../GeneralComponent/MovieCircularPercentage'
 
 function MovieCard(props) {
 
+
   return (
     <div>
-      <div className="card" id='movieCardId' style = {{ width: '270px', border: 'none' }}>
+      <div className="card" id='movieCardId' style = {{ width: '270px', border: 'none', paddingBottom: '10%' }}>
         <div className="MovieImage" >
           <div className="movieRating" style={{
             position: 'absolute',
@@ -15,7 +16,7 @@ function MovieCard(props) {
           }}>
             <MovieRating rating={props.rating} />
           </div>
-          <img src={`https://image.tmdb.org/t/p/w440_and_h660_face/${props.poster}`} alt='movieImage' style = {{ height:'400px', borderRadius: '5%' }} />
+          <img src={ props.poster } alt='movieImage' style = {{ height:'400px', borderRadius: '5%' }} />
 
         </div>
         <div className="movieTitle" style = {{ paddingTop:'14%', paddingLeft: '2%' }} > 

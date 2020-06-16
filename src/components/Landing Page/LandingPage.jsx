@@ -7,10 +7,6 @@ function LandingPage() {
 
   const [data, setData] = useState([]);
 
-  // for searched movie
-  useEffect(() => {
-
-  })
 
   // link added infront of the image data we are getting from api
   const imagelink = 'https://image.tmdb.org/t/p/w440_and_h660_face/'

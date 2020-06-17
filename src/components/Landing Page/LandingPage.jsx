@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import MovieCard from './MovieCard'
+import MovieCard from '../GeneralComponent/MovieCard'
 import axios from 'axios'
 import SearchBox from '../GeneralComponent/SearchBox'
 
@@ -30,8 +30,8 @@ function LandingPage() {
   }, [])
 
   const movieCardData = data.map((moviesData, index) => {
-    return <MovieCard key={moviesData.id} title={moviesData.title || moviesData.name} rating={moviesData.vote_average * 10 } poster = { 
-      `${imagelink}${moviesData.poster_path}` || defaultImage } />
+    return <MovieCard key={moviesData.id} title={moviesData.title || moviesData.name} rating={moviesData.vote_average * 10} poster={
+      `${imagelink}${moviesData.poster_path}` || defaultImage} />
   })
 
   return (
@@ -41,11 +41,17 @@ function LandingPage() {
       </h1>
 
       <SearchBox />
-      
-        <h2 style = {{ paddingLeft: '14%'}}> Popular Movies </h2>
-      <div className="card-columns" style= {{ padding:'5%', marginLeft: '9%' }} >
-        { movieCardData }
-      </div>
+
+      {data.length === 0 ? (
+        <img src='https://i.imgur.com/FmYeL3j.gif' alt='loading Image' />
+      ) : (
+          <div>
+            <h2 style={{ paddingLeft: '14%' }}> Popular Movies </h2>
+            <div className="card-columns" style={{ padding: '5%', marginLeft: '9%' }} >
+              {movieCardData}
+            </div>
+          </div>
+        )}
 
     </div>
   )

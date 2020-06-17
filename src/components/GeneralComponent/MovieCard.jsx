@@ -1,5 +1,5 @@
 import React from 'react'
-import MovieRating from '../GeneralComponent/MovieCircularPercentage'
+import MovieRating from './MovieCircularPercentage'
 
 function MovieCard(props) {
 

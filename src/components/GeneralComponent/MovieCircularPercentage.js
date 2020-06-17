@@ -5,8 +5,6 @@ import "react-circular-progressbar/dist/styles.css";
 
 function MovieCircularPercentage(props) {
   
-  // console.log('props in raring', rating)
-  // const rating = props.rating
   return (
     <div
     style={{

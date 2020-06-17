@@ -10,8 +10,6 @@ function SearchPage(props) {
 
   const [totalPages, setTotalPages] = useState(null)
 
-  console.log('page in searchpoage ---->', page)
-  console.log('props in search page', props.match.params.movie)
   // link added infront of the image data we are getting from api
   const imagelink = 'https://image.tmdb.org/t/p/w440_and_h660_face/'
 
@@ -25,8 +23,6 @@ function SearchPage(props) {
   useEffect(() => {
     axios.get(url)
       .then((res) => {
-        console.log(res);
-        console.log(res.data);
         const apiData = res.data;
         setData(apiData.results);
         setTotalPages(apiData.total_pages)
@@ -48,7 +44,6 @@ function SearchPage(props) {
 
   //next page funbction for pagination
   const nextPage = () => {
-    console.log('next page')
     if (data && page !== totalPages) {
       setPage(page + 1)
     }
@@ -56,7 +51,6 @@ function SearchPage(props) {
 
   //  previous page function for pagination
   const previousPage = () => {
-    console.log('previous page')
     if (data && page !== 1) {
       setPage(page - 1)
     }
@@ -71,13 +65,15 @@ function SearchPage(props) {
       <SearchBox />
 
 
-      <h2 style={{ paddingLeft: '14%' }}> Showing Results For {props.match.params.movie} </h2>
+      <h2 style={{ paddingLeft: '14%', paddingTop: '2%' }}> Showing Results For {props.match.params.movie} </h2>
       <div className="card-columns" style={{ padding: '5%', marginLeft: '9%' }} >
         {searchedMovieData}
       </div>
 
-      <button onClick={previousPage} > Previous </button>
-      <button onClick={nextPage} > Next </button>
+      <div className='paginationButton' style={{ display: 'flex', justifyContent: 'space-around', paddingBottom: '5%' }}>
+        <button onClick={previousPage} className='button' ><i class="fa  fa-chevron-left"></i> Previous </button>
+        <button onClick={nextPage} className='button'> Next <i class="fa  fa-chevron-right"></i></button>
+      </div>
 
     </div>
   )

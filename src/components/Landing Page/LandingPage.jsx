@@ -42,7 +42,7 @@ function LandingPage() {
       imagePath = imagelink + moviesData.poster_path;
     }
 
-    return <MovieCard key={moviesData.id || Math.random() * 100} title={moviesData.title || moviesData.name} rating={moviesData.vote_average * 10 || 0} poster={imagePath} />
+    return <MovieCard key={moviesData.id || Math.random() * 100} id={moviesData.id || Math.random() * 100} title={moviesData.title || moviesData.name} rating={moviesData.vote_average * 10 || 0} poster={imagePath} />
   })
 
   //next page funbction for pagination
@@ -71,13 +71,30 @@ function LandingPage() {
         <img src='https://i.imgur.com/FmYeL3j.gif' alt='loading Image' />
       ) : (
           <div>
-            <h2 style={{ paddingLeft: '14%' }}> Popular Movies </h2>
-            <div className="card-columns" style={{ padding: '5%', marginLeft: '9%' }} >
+            <h2 style={{ paddingLeft: '14%', paddingTop: '2%' }}>
+              Popular Right Now
+            </h2>
+
+            <div className="card-columns"
+              style={{ padding: '5%', marginLeft: '9%' }} >
               {movieCardData}
             </div>
-            <div className='paginationButton' style={{ display: 'flex', justifyContent: 'space-around', paddingBottom: '5%' }}>
-              <button onClick={previousPage} className='button' ><i class="fa  fa-chevron-left"></i> Previous </button>
-              <button onClick={nextPage} className='button'> Next <i class="fa  fa-chevron-right"></i></button>
+
+            <div className='paginationButton'
+              style={{ display: 'flex', justifyContent: 'space-around', paddingBottom: '5%' }}>
+
+              <button onClick={previousPage}
+                className='button' >
+                <i class="fa  fa-chevron-left"></i>
+                  Previous
+              </button>
+
+              <button onClick={nextPage}
+                className='button'>
+                Next
+                <i class="fa  fa-chevron-right"></i>
+              </button>
+
             </div>
           </div>
         )}

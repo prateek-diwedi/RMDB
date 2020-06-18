@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import Landing from './components/Landing Page/LandingPage'
 import SearchPage from './components/searchPage/SearchPage'
+import MoviePage from './components/Movie Page/MoviePage'
 import DarkModeToggle from './components/DarkMode/DarkModeToggle';
 import './App.scss'
 //bootstrap
@@ -18,6 +19,7 @@ function App() {
       <DarkModeToggle />
       <Route exact path='/' component={Landing} />
       <Route exact path='/search/:movie' component={SearchPage} />
+      <Route exact path='/movie/:id/:movie' component={MoviePage} />
     </div>
     </Router>
   );

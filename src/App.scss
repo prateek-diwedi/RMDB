@@ -12,6 +12,14 @@ body.light-mode {
   transition: background-color 0.3s ease;
 }
 
+body.light-mode h5 {
+  color: black;
+}
+
+body.dark-mode h5 {
+  color: white;
+}
+
 body.dark-mode {
   background-color: #10171d;
   color: #dfdfdf;

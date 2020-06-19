@@ -1,0 +1,53 @@
+.card-img {
+  opacity: 50%;
+}
+
+.moviePoster {
+  border-radius: 12%;
+  padding-top: 3%;
+  width: 440px;
+}
+
+.movieCardRating {
+  position: absolute;
+  width: 200px;
+  margin-left: 35%;
+  margin-top: 30%;
+}
+
+.title {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 5%;
+  font-size: 50px;
+}
+
+.discription {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 15%;
+  font-size: 20px;
+}
+
+.tagline {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+@media (max-width: 400px) {
+  .moviePoster {
+    height: 180px;
+    border-radius: 12%;
+  }
+  .title {
+    font-size: 25px;
+    margin-left: 40%;
+  }
+  .movieRating {
+    width: 60px;
+    margin-left: 40%;
+    margin-top: 37%;
+  }
+}

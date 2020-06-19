@@ -19,7 +19,7 @@ function App() {
       <DarkModeToggle />
       <Route exact path='/' component={Landing} />
       <Route exact path='/search/:movie' component={SearchPage} />
-      <Route exact path='/movie/:id/:movie' component={MoviePage} />
+      <Route exact path='/movie/:id/:type/:movie' component={MoviePage} />
     </div>
     </Router>
   );

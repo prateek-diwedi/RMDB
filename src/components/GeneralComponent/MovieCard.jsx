@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 function MovieCard(props) { 
 
   return (
-    <Link to={`/movie/${props.id}/${props.title}`}>
+    <Link to={`/movie/${props.id}/${props.type}/${props.title}`} style={{ textDecoration: 'none'}} >
     <div>
-      <div className="card" id='movieCardId' style = {{ width: '270px', border: 'none', paddingBottom: '10%' }}>
+      <div className="card" id='movieCardId' style = {{ width: '270px', border: 'none', paddingBottom: '10%', textDecoration:'none' }}>
         <div className="MovieImage" >
           <div className="movieRating" style={{
             position: 'absolute',
@@ -15,7 +15,9 @@ function MovieCard(props) {
             paddingTop: '370px',
             zIndex: 10
           }}>
+            <div className='movierating' style={{ width: '60px'}}>
             <MovieRating rating={props.rating} />
+            </div>
           </div>
           <img src={ props.poster } alt='movieImage' style = {{ height:'400px', borderRadius: '5%' }} />
 

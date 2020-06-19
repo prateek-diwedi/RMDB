@@ -8,8 +8,8 @@ function MovieCircularPercentage(props) {
   return (
     <div
     style={{
-      width: "60px",
-      height: "60px",
+      // width: "100px",
+      // height: "100px",
       background: 'black',
       borderRadius:100,
       zIndex: 50,

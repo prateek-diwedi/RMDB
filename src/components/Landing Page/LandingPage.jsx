@@ -42,7 +42,7 @@ function LandingPage() {
       imagePath = imagelink + moviesData.poster_path;
     }
 
-    return <MovieCard key={moviesData.id || Math.random() * 100} id={moviesData.id || Math.random() * 100} title={moviesData.title || moviesData.name} rating={moviesData.vote_average * 10 || 0} poster={imagePath} />
+    return <MovieCard key={moviesData.id || Math.random() * 100} id={moviesData.id || Math.random() * 100} title={moviesData.title || moviesData.name} rating={moviesData.vote_average * 10 || 0} poster={imagePath} type={moviesData.media_type} />
   })
 
   //next page funbction for pagination

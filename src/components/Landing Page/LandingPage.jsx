@@ -15,7 +15,7 @@ function LandingPage() {
 
   const logo = 'https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg';
 
-  const myLogo = '../../7GONVI.png'
+  const myLogo = 'https://github.com/prateek-diwedi/movie-database/blob/master/public/7G0NVl.png?raw=true'
 
 
   // link added infront of the image data we are getting from api
@@ -67,8 +67,7 @@ function LandingPage() {
   return (
     <div>
       <h1 id='prateek' style={{display:'flex', justifyContent: 'space-between', paddingLeft:'2%', paddingRight:'2%'}} >
-        Movie Database
-        <img src={myLogo} alt='myLogo' />
+        <img src={myLogo} alt='myLogo' style={{ height:'50px'}} />
         <img src={logo} alt='tmdb'  style={{height:'50px'}} />
       </h1>
 

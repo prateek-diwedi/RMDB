@@ -6,10 +6,8 @@ import './actorPage.scss'
 function ActorPage(props) {
 
   const [data, setData] = useState([]);
-  console.log('data from url--->', data)
 
   const [credits, setCredits] = useState([]);
-  console.log('credits from url--->', credits)
 
   //link for the image
   const imageLink = 'https://image.tmdb.org/t/p/w1280/'
@@ -102,10 +100,10 @@ function ActorPage(props) {
         </div>
       </div>
       <div className="also" >
-       <h4> Also known For </h4>
+        <h4> Also known For </h4>
       </div>
       <div className="card-columns"
-        style={{ padding: '5%', marginLeft: '9%' }} >
+        style={{ padding: '5%', marginLeft: '5%' }} >
         {alsoApearedIn}
       </div>
     </div>

@@ -21,3 +21,18 @@
   margin-left: 15%;
   margin-top: 5%;
 }
+
+// responsive
+// iphone
+@media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .actorImage img {
+    height: 200px;
+  }
+}
+
+//ipad pro
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .card-columns {
+    padding-left: 0%;
+  }
+}

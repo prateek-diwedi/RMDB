@@ -1,19 +1,17 @@
 import React from "react";
-import  CircularProgressbar  from "react-circular-progressbar";
-import { Spring , config } from "react-spring/renderprops";
+import CircularProgressbar from "react-circular-progressbar";
+import { Spring, config } from "react-spring/renderprops";
 import "react-circular-progressbar/dist/styles.css";
 
 function MovieCircularPercentage(props) {
-  
+
   return (
     <div
-    style={{
-      // width: "100px",
-      // height: "100px",
-      background: 'black',
-      borderRadius:100,
-      zIndex: 50,
-    }}
+      style={{
+        background: 'black',
+        borderRadius: 100,
+        zIndex: 50,
+      }}
     >
       <Spring
         from={{ percentage: 0 }}

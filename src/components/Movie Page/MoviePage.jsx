@@ -93,11 +93,11 @@ function MoviePage(props) {
       </div>
       <div className='castContainer'>
         <h2> Cast </h2>
-        </div>
-        <div className="card-columns"
-          style={{ padding: '5%', marginLeft: '9%' }} >
-          {castInfo}
-        </div>
+      </div>
+      <div className="card-columns"
+        style={{ padding: '5%', marginLeft: '9%' }} >
+        {castInfo}
+      </div>
     </div>
   )
 }

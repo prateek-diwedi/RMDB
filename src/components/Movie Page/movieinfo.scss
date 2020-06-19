@@ -2,6 +2,11 @@
   opacity: 50%;
 }
 
+.castContainer h2{
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
 .moviePoster {
   border-radius: 12%;
   padding-top: 3%;
@@ -39,6 +44,9 @@ and (-webkit-min-device-pixel-ratio: 3) {
     height: 180px;
     width: auto;
     border-radius: 12%;
+  }
+  .castContainer {
+    padding-top: 80%;
   }
   .title {
     font-size: 20px;

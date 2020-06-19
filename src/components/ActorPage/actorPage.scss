@@ -1,0 +1,23 @@
+.actorImage img {
+  height: 600px;
+  width: auto;
+  border-radius: 12%;
+  margin-left: 7%;
+}
+
+.generalFacts {
+  display: flex;
+}
+
+.allfacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.also {
+  margin-left: 15%;
+  margin-top: 5%;
+}

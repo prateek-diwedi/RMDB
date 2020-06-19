@@ -3,10 +3,15 @@ import MovieRating from './MovieCircularPercentage'
 import { Link } from 'react-router-dom';
 
 function MovieCard(props) { 
-
+  let type = ''
+  if(props.type == undefined) {
+    type = 'movie'
+  } else {
+    type = props.type
+  }
   return (
     <div>
-      <Link to={`/movie/${props.id}/${props.type}/${props.title}`} style={{ textDecoration: 'none'}} >
+      <Link to={`/movie/${props.id}/${type}/${props.title}`} style={{ textDecoration: 'none'}} >
 
       <div className="card" id='movieCardId' style = {{ width: '270px', border: 'none', paddingBottom: '10%', textDecoration:'none' }}>
         <div className="MovieImage" >
@@ -24,7 +29,8 @@ function MovieCard(props) {
 
         </div>
         <div className="movieTitle" style = {{ paddingTop:'14%', paddingLeft: '2%' }} > 
-          <h5> {props.title} </h5>
+          <h4> {props.title} </h4>
+          <h6> {props.character} </h6>
         </div>
       </div>
 

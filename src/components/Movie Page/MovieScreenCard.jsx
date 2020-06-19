@@ -4,7 +4,7 @@ import { year } from './helper'
 import './movieinfo.scss'
 
 function MovieScreenCard(props) {
-  console.log('props in movie screen card--->', props.homePage)
+  console.log('props in movie screen card--->', props)
 
   const released = year(props.releaseDate);
   return (
@@ -13,12 +13,8 @@ function MovieScreenCard(props) {
         <img className="card-img" src={props.background} alt="Card image" />
        <div className="title">
          <p> { props.title } ( {released} ) </p>
-       </div>
-       <div className="tagline">
-         <p> { props.tagLine } </p>
-       </div>
-       <div className="discription">
-         <p> { props.overview} </p>
+         <p className='tagline'> { props.tagLine } </p>
+         <p className='discription'> { props.overview} </p>
        </div>
           <div className='movieCardRating'>
             <MovieRating rating={props.rating} />

@@ -24,7 +24,7 @@ function MoviePage(props) {
   const defaultBackground = 'https://www.pptgrounds.com/wp-content/uploads/2012/08/Blue-movie-film-strip-backgrounds.jpg'
 
   // url to ketch movie data
-  const url = `https://api.themoviedb.org/3/${type}/${movieId}?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US`
+  const url = `https://api.themoviedb.org/3/${type}/${movieId}?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&append_to_response=credits`
 
   //  fetching the movie data
   useEffect(() => {
@@ -69,6 +69,7 @@ function MoviePage(props) {
           rating={data.vote_average * 10 || 0}
           homePage={data.homepage}
           releaseDate={data.release_date || data.first_air_date}
+          cast = {data.credits || 'Cast Not Available'}
         />
       </div>
     </div>

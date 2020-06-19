@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import MovieRating from './MovieCircularPercentage'
 import { Link } from 'react-router-dom';
 
 function MovieCard(props) { 
 
   return (
-    <Link to={`/movie/${props.id}/${props.type}/${props.title}`} style={{ textDecoration: 'none'}} >
     <div>
+      <Link to={`/movie/${props.id}/${props.type}/${props.title}`} style={{ textDecoration: 'none'}} >
+
       <div className="card" id='movieCardId' style = {{ width: '270px', border: 'none', paddingBottom: '10%', textDecoration:'none' }}>
         <div className="MovieImage" >
           <div className="movieRating" style={{
@@ -26,8 +27,9 @@ function MovieCard(props) {
           <h5> {props.title} </h5>
         </div>
       </div>
-    </div>
+
     </Link>
+    </div>
   )
 }
 

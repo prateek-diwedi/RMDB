@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/RMDB/static/css/main.8b15051f.chunk.css",
+    "main.js": "/RMDB/static/js/main.9165c1dc.chunk.js",
+    "main.js.map": "/RMDB/static/js/main.9165c1dc.chunk.js.map",
+    "runtime-main.js": "/RMDB/static/js/runtime-main.55c4b42b.js",
+    "runtime-main.js.map": "/RMDB/static/js/runtime-main.55c4b42b.js.map",
+    "static/css/2.1ba26301.chunk.css": "/RMDB/static/css/2.1ba26301.chunk.css",
+    "static/js/2.601f2311.chunk.js": "/RMDB/static/js/2.601f2311.chunk.js",
+    "static/js/2.601f2311.chunk.js.map": "/RMDB/static/js/2.601f2311.chunk.js.map",
+    "index.html": "/RMDB/index.html",
+    "precache-manifest.1caa4ea412c56db0599ccfe3560acdff.js": "/RMDB/precache-manifest.1caa4ea412c56db0599ccfe3560acdff.js",
+    "service-worker.js": "/RMDB/service-worker.js",
+    "static/css/2.1ba26301.chunk.css.map": "/RMDB/static/css/2.1ba26301.chunk.css.map",
+    "static/css/main.8b15051f.chunk.css.map": "/RMDB/static/css/main.8b15051f.chunk.css.map",
+    "static/js/2.601f2311.chunk.js.LICENSE.txt": "/RMDB/static/js/2.601f2311.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/RMDB/static/media/logo.ff8991fe.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.55c4b42b.js",
+    "static/css/2.1ba26301.chunk.css",
+    "static/js/2.601f2311.chunk.js",
+    "static/css/main.8b15051f.chunk.css",
+    "static/js/main.9165c1dc.chunk.js"
+  ]
+}

@@ -2,6 +2,9 @@
 
 Website to get all the details of movies and tv shows.
 
+## Live Demo
+https://react-movies-data-base.herokuapp.com/
+
 ## Setup
 
 1. Run `npm install` to install dependencies

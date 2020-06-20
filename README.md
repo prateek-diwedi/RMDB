@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Movies
 
-## Available Scripts
+Website to get all the details of movies and tv shows.
 
-In the project directory, you can run:
+## Setup
 
-### `yarn start`
+1. Run `npm install` to install dependencies
+2. Run `npm start` to start the server and make the app running.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Dependencies
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+*    axios: "^0.19.2",
+*    bootstrap: "^4.5.0",
+*    node-sass: "^4.14.1",
+*    react: "^16.13.1",
+*    react-circular-progressbar: "^1.0.0",
+*    react-dom: "^16.13.1",
+*    react-router-dom: "^5.2.0",
+*    react-scripts: "3.4.1",
+*    react-spring: "^8.0.27",
+*    use-dark-mode: "^2.3.1"
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## SCREEN SHOTS
 
-### `yarn build`
+## Home Page Night Mode
+!["Home Page1"](https://github.com/prateek-diwedi/RMDB/blob/master/screenshots/Screen%20Shot%202020-06-20%20at%203.04.12%20PM.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Home Page Day Mode
+!["Home Page2"](https://github.com/prateek-diwedi/RMDB/blob/master/screenshots/Screen%20Shot%202020-06-21%20at%201.27.43%20AM.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Search Page
+!["Search Page"](https://github.com/prateek-diwedi/RMDB/blob/master/screenshots/Screen%20Shot%202020-06-21%20at%201.28.19%20AM.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Search Page Night Mode
+!["Search Page2"](https://github.com/prateek-diwedi/RMDB/blob/master/screenshots/Screen%20Shot%202020-06-21%20at%201.28.29%20AM.png)
 
-### `yarn eject`
+## Movie Page
+!["Movie Page"](https://github.com/prateek-diwedi/RMDB/blob/master/screenshots/Screen%20Shot%202020-06-21%20at%201.28.42%20AM.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Cast in Movie Page
+!["Movie Page2"](https://github.com/prateek-diwedi/RMDB/blob/master/screenshots/Screen%20Shot%202020-06-21%20at%201.28.54%20AM.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Cast Page
+!["Cast Page"](https://github.com/prateek-diwedi/RMDB/blob/master/screenshots/Screen%20Shot%202020-06-21%20at%201.29.06%20AM.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Cast also known for
+!["cast Page2"](https://github.com/prateek-diwedi/RMDB/blob/master/screenshots/Screen%20Shot%202020-06-21%20at%201.29.17%20AM.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Reasponsive for Mobile
+!["Responsive for Mobile"](https://github.com/prateek-diwedi/RMDB/blob/master/screenshots/Screen%20Shot%202020-06-21%20at%201.30.38%20AM.png)

@@ -48,7 +48,7 @@ function MoviePage(props) {
   //  maping the cast
   const castInfo = crew.map((castData, index) => {
     var castImage;
-    if (castData.profile_path == null || castData.profile_path == "") {
+    if (castData.profile_path === null || castData.profile_path === "") {
       castImage = defaultImage;
     } else {
       castImage = imagelink + castData.profile_path;
@@ -59,14 +59,14 @@ function MoviePage(props) {
 
 
   let imagePath = ''
-  if (data.poster_path == null || data.poster_path == "") {
+  if (data.poster_path === null || data.poster_path === "") {
     imagePath = defaultImage;
   } else {
     imagePath = imagelink + data.poster_path;
   }
 
   let backgroundPath = ''
-  if (data.backdrop_path == null || data.backdrop_path == '') {
+  if (data.backdrop_path === null || data.backdrop_path === '') {
     backgroundPath = defaultBackground;
   } else {
     backgroundPath = backgroundLink + data.backdrop_path

@@ -33,7 +33,7 @@ function SearchPage(props) {
 
   const searchedMovieData = data.map((moviesData, index) => {
     var imagePath;
-    if (moviesData.poster_path == null || moviesData.poster_path == "") {
+    if (moviesData.poster_path === null || moviesData.poster_path === "") {
       imagePath = defaultImage;
     } else {
       imagePath = imagelink + moviesData.poster_path;

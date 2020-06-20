@@ -35,7 +35,7 @@ function ActorPage(props) {
   // maping movies of actor 
   const alsoApearedIn = credits.map((film, index) => {
     var pictureImage;
-    if (film.poster_path == null || film.poster_path == "") {
+    if (film.poster_path === null || film.poster_path === "") {
       pictureImage = defaultImage;
     } else {
       pictureImage = movieLink + film.poster_path;
@@ -51,7 +51,7 @@ function ActorPage(props) {
 
   //actor image
   let imagePath = ''
-  if (data.profile_path == null || data.profile_path == "") {
+  if (data.profile_path === null || data.profile_path === "") {
     imagePath = defaultImage;
   } else {
     imagePath = imageLink + data.profile_path;

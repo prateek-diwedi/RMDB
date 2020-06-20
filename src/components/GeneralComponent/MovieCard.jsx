@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function MovieCard(props) {
   let type = ''
-  if (props.type == undefined) {
+  if (props.type === undefined) {
     type = 'movie'
   } else {
     type = props.type

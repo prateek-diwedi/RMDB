@@ -36,3 +36,14 @@
     padding-left: 0%;
   }
 }
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .actorImage img {
+      height: 200px;
+    }
+  }

@@ -126,3 +126,30 @@
     width: auto;
   }
 }
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+   .moviePoster {
+     width: 100px;
+   }
+   .movieCardRating{
+     width: 60px;
+   }
+   .title{
+     font-size: 28px;
+   }
+   .tagline{
+     font-size: 13px;
+   }
+   .discription{
+     font-size: 18px;
+     margin-top: 50%;
+   }
+   .castContainer{
+     margin-top: 85%;
+   }
+  }
